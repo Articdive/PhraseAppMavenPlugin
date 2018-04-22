@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>de.articdive</groupId>
+    <artifactId>phraseapp-maven-plugin</artifactId>
+    <packaging>maven-plugin</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>phraseapp-maven-plugin</name>
+    <url>ci.articdive.cf</url>
+
+    <licenses>
+        <license>
+            <name>Creative Commons Attribution-NonCommercial-NoDerivative International License.
+                ( Short Code: CC BY-NC-ND 4.0 )
+            </name>
+            <url>http://creativecommons.org/licenses/by-nc-nd/4.0/</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Lukas Mansour</name>
+        </developer>
+    </developers>
+    <repositories>
+        <repository>
+            <id>mvnrepository</id>
+            <name>mvnrepository</name>
+            <url>http://www.mvnrepository.com</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-project</artifactId>
+            <version>LATEST</version>
+        </dependency>
+    </dependencies>
+</project>
