@@ -5,7 +5,7 @@ A Maven Plugin which allows you to retrieve PhraseApp locales on compile/build
 # How to add this plugin to your Maven Project
 
 Add this pluginRepository:
-```
+```xml
     <pluginRepositories>
         <pluginRepository>
             <id>Articdive's Repostiory</id>
@@ -15,7 +15,7 @@ Add this pluginRepository:
     </pluginRepositories>
 ```
 Add this to your build configuration:
-```
+```xml
     <build>
         <plugins>
             <plugin>
@@ -45,3 +45,19 @@ Add this to your build configuration:
         </plugins>
     </build>
 ```
+# FAQ
+
+## How can I create an authentication token on PhraseApp?
+
+Log into PhraseApp hover over your name in the top right-hand corner and hit "Access Tokens" on the dropdown.    
+Next hit "Generate Token", remove "write" from the scopes and give it some name e.g "maven-phraseapp-plugin".    
+
+## Why do you want a "read-only" token?
+
+If you don't post this to GitHub/BitBucket/Other then you can use a token with full permissions if you want.    
+I mainly do it because most projects will end up on GitHub and anyone can take the key and write to your file.   
+
+## I have an error, what do I do?
+
+Feel free to open an issue request so I can see what the issue is and tell you how to fix it.   
+However 80% of the issues are HTTP-Request Issues, their errors are logged so you might be able to fix them yourself.    
