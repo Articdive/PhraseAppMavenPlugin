@@ -1,6 +1,6 @@
-[![Build Status](http://ci.articdive.cf/job/PhraseApp-Maven-Plugin/badge/icon)](http://ci.articdive.cf/job/PhraseApp-Maven-Plugin)
 # PhraseApp-Maven-Plugin
-A Maven Plugin which allows you to retrieve PhraseApp locales on compile/build
+A Maven Plugin which allows you to retrieve PhraseApp locales on compile/build   
+[![Build Status](http://ci.articdive.cf/job/PhraseApp-Maven-Plugin/badge/icon)](http://ci.articdive.cf/job/PhraseApp-Maven-Plugin)
 
 # How to add this plugin to your Maven Project
 
