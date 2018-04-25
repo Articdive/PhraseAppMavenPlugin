@@ -75,6 +75,12 @@ public class PhraseAppPlugin extends AbstractMojo {
 	 */
 	private List<String> ignoredLocales = new ArrayList<String>();
 
+	/**
+	 * @parameter name="include_empty_translations"
+	 * @since 2.0
+	 */
+	private boolean include_empty_translations = false;
+
 	private HttpClient httpClient;
 
 	public void execute() throws MojoFailureException {
@@ -142,7 +148,7 @@ public class PhraseAppPlugin extends AbstractMojo {
 			return;
 		}
 		getLog().info("Attempting to download locale with ID " + localeid + " ( " + name + " ) ");
-		String urlOverHttps = "https://api.phraseapp.com/api/v2/projects/" + projectID + "/locales/" + localeid + "/download" + "?file_format=yml" + "&access_token=" + authToken;
+		String urlOverHttps = "https://api.phraseapp.com/api/v2/projects/" + projectID + "/locales/" + localeid + "/download" + "?file_format=yml" + "&include_empty_translations=" + include_empty_translations + "&access_token=" + authToken;
 		Header maintainerheader = new BasicHeader("User-Agent", "phraseapp-maven-plugin (articdive@gmail.com");
 		Header userheader = new BasicHeader("User-Agent (End-User)", project.getArtifactId() + "(" + project.getOrganization() + ")");
 		HttpGet getMethod = new HttpGet(urlOverHttps);
