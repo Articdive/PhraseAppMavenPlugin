@@ -40,6 +40,8 @@ Add this to your build configuration:
                     <ignoredLocales>
                         <ignoredLocale>INSERT_LOCALE_ID_TO_IGNORE_HERE</ignoredLocale>
                     </ignoredLocales>
+                    <include_empty_translations>true/false</include_empty_translations>
+                    <fallback_locale_id>INSERT_FALLBACK_LOCALE_ID</fallback_locale_id>
                 </configuration>
             </plugin>
         </plugins>

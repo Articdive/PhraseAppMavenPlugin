@@ -4,7 +4,7 @@
     <groupId>de.articdive</groupId>
     <artifactId>phraseapp-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>2.0</version>
+    <version>3.0</version>
     <name>phraseapp-maven-plugin</name>
     <url>ci.articdive.cf</url>
 
