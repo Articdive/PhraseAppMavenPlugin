@@ -21,7 +21,7 @@ Add this to your build configuration:
             <plugin>
                 <groupId>de.articdive</groupId>
                 <artifactId>phraseapp-maven-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>2.0</version>
                 <executions>
                     <execution>
                         <goals>
