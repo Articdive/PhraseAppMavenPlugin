@@ -6,7 +6,7 @@
     <packaging>maven-plugin</packaging>
     <version>3.0</version>
     <name>phraseapp-maven-plugin</name>
-    <url>ci.articdive.cf</url>
+    <url>https://ci.articdive.cf</url>
 
     <licenses>
         <license>
@@ -20,6 +20,7 @@
     <developers>
         <developer>
             <name>Lukas Mansour</name>
+            <url>htpps://articdive.cf</url>
         </developer>
     </developers>
     <repositories>
