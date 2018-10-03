@@ -6,7 +6,7 @@
     <packaging>maven-plugin</packaging>
     <version>3.0</version>
     <name>phraseapp-maven-plugin</name>
-    <url>https://ci.articdive.cf</url>
+    <url>https://ci.articdive.de</url>
 
     <licenses>
         <license>
@@ -53,4 +53,17 @@
             <version>LATEST</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Releases</name>
+            <url>https://nexus.articdive.de/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Snapshot</name>
+            <url>https://nexus.articdive.de/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
